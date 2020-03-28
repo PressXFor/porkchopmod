@@ -21,4 +21,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> PORKCHOP_ORE = BLOCKS.register("porkchop_ore", () -> new Block(
 			Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.STONE)));
 
+	public static final RegistryObject<Block> GREASE_DIRT = BLOCKS.register("grease_dirt", () -> new Block(Block.Properties
+			.create(Material.PLANTS).hardnessAndResistance(0.5f, 0.5f).sound(SoundType.PLANT).slipperiness(0.989f)));
+
 }

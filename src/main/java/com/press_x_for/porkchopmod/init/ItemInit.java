@@ -33,6 +33,9 @@ public class ItemInit {
 	public static final RegistryObject<Item> PORKCHOP_ORE = ITEMS.register("pork_ore",
 			() -> new BlockItem(BlockInit.PORKCHOP_ORE.get(), new Item.Properties().group(PorkchopItemGroup.instance)));
 
+	public static final RegistryObject<Item> GREASE_DIRT = ITEMS.register("pork_dirt_item",
+			() -> new BlockItem(BlockInit.GREASE_DIRT.get(), new Item.Properties().group(PorkchopItemGroup.instance)));
+
 	// Tools
 
 	public static final RegistryObject<Item> PORKCHOP_SWORD = ITEMS.register("porkchop_sword",
