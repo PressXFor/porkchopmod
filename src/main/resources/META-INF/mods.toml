@@ -1,0 +1,52 @@
+modLoader="javafml"
+
+
+loaderVersion="[31,)"
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="porkchopmod"
+
+version="1.0"
+
+displayName="Porkchop Mod"
+
+updateJSONURL="http://murl.me/"
+
+displayURL="http://example.com/"
+
+logoFile="examplemod.png"
+
+credits="Thank you too me, but you can be thanked too"
+
+authors="Me, Press_X_For"
+
+description='''
+	It's pork.
+'''
+
+
+
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.porkchop]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[31,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+
+# Here's another dependency
+[[dependencies.porkchop]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
