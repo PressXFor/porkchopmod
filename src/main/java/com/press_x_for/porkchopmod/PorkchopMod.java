@@ -65,6 +65,10 @@ public class PorkchopMod {
 		BlockInit.PORKCHOP_ORE.get();
 		ItemInit.PORKCHOP_ORE.get();
 		ItemInit.PORKCHOP_SWORD.get();
+		ItemInit.PORKCHOP_PICKAXE.get();
+		ItemInit.PORKCHOP_SHOVEL.get();
+		ItemInit.PORKCHOP_PICKAXE.get();
+		ItemInit.PORKSHOP_HOE.get();
 		
 
 		LOGGER.debug("Registered BlockItems!");
