@@ -4,9 +4,13 @@ import com.google.common.base.Supplier;
 import com.press_x_for.porkchopmod.PorkchopMod;
 import com.press_x_for.porkchopmod.PorkchopMod.PorkchopItemGroup;
 
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
@@ -46,19 +50,19 @@ public class ItemInit {
 					new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	public static final RegistryObject<Item> PORKCHOP_PICKAXE = ITEMS.register("porkchop_pickaxe",
-			() -> new SwordItem(ModItemTier.PORKCHOP, 4, 5.0f,
+			() -> new PickaxeItem(ModItemTier.PORKCHOP, 4, 5.0f,
 					new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	public static final RegistryObject<Item> PORKCHOP_SHOVEL = ITEMS.register("porkchop_shovel",
-			() -> new SwordItem(ModItemTier.PORKCHOP, 2, 5.0f,
+			() -> new ShovelItem(ModItemTier.PORKCHOP, 2, 5.0f,
 					new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	public static final RegistryObject<Item> PORKCHOP_AXE = ITEMS.register("porkchop_axe",
-			() -> new SwordItem(ModItemTier.PORKCHOP, 11, 5.0f,
+			() -> new AxeItem(ModItemTier.PORKCHOP, 11, 5.0f,
 					new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	public static final RegistryObject<Item> PORKSHOP_HOE = ITEMS.register("porkchop_hoe",
-			() -> new SwordItem(ModItemTier.PORKCHOP, 5, 5.0f,
+			() -> new HoeItem(ModItemTier.PORKCHOP, 5.0f,
 					new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	// Tier
