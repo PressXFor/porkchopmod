@@ -29,6 +29,9 @@ public class ItemInit {
 
 	public static final RegistryObject<Item> PORK_BITS = ITEMS.register("pork_bits",
 			() -> new Item(new Item.Properties().group(PorkchopItemGroup.instance)));
+	
+	public static final RegistryObject<Item> PORK_INGOT = ITEMS.register("pork_ingot",
+			() -> new Item(new Item.Properties().group(PorkchopItemGroup.instance)));
 
 	public static final RegistryObject<Item> PORKCHOP_ORE = ITEMS.register("pork_ore",
 			() -> new BlockItem(BlockInit.PORKCHOP_ORE.get(), new Item.Properties().group(PorkchopItemGroup.instance)));
