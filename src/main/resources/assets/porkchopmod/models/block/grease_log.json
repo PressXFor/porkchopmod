@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "porkchopmod:blocks/grease_log_top",
+        "side": "porkchopmod:blocks/grease_log"
+    }
+}

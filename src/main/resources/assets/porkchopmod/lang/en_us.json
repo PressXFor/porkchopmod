@@ -25,7 +25,15 @@
 	
 	"item.porkchopmod.porkchop_axe": "Porkchop Axe",
 	
-	"item.porkchopmod.porkchop_hoe": "Porkchop Hoe"
+	"item.porkchopmod.porkchop_hoe": "Porkchop Hoe",
+	
+	"block.porkchopmod.grease_planks": "Grease Planks",
+	
+	"block.porkchopmod.grease_log": "Grease Log",
+	
+	"block.porkchopmod.grease_sapling": "Grease Sapling",
+	
+	"block.porkchopmod.grease_leaves": "Grease Leaves"
 	
 	
 }
