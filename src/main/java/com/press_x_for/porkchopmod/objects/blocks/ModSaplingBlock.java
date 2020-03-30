@@ -3,6 +3,7 @@ package com.press_x_for.porkchopmod.objects.blocks;
 import java.util.Random;
 
 import com.google.common.base.Supplier;
+import com.press_x_for.porkchopmod.init.BlockInit;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -78,4 +79,10 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
 	protected void fillStateContainer(Builder<Block, BlockState> builder) {
 		builder.add(STAGE);
 	}
+	
+	@Override
+    public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        Block block = state.getBlock();
+        return block == BlockInit.GREASE_DIRT.get();
+    }
 }
